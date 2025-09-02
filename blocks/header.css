@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin-top: 34px;
+  height: 70px;
+  width: 254px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-top: 30px;
+    height: 66px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    margin-top: 20px;
+    height: 52px;
+    width: 188px;
+  }
+}
