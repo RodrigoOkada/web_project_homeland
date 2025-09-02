@@ -13,4 +13,4 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias e técnicas:
 
 ## Link para o GitHub Pages
 
-[Link para o GitHub Pages](https://rodrigookada.github.io/homeland/)
+[Link para o GitHub Pages](https://rodrigookada.github.io/web_project_homeland/)
