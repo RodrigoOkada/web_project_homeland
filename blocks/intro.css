@@ -44,6 +44,7 @@
   .intro {
     max-width: 720px;
     margin-top: 90px;
+    padding: 0 16px;
   }
 
   .intro__title {

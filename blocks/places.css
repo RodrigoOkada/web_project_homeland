@@ -1,0 +1,139 @@
+.places {
+  margin: 0 auto 90px;
+  max-width: 984px;
+  display: grid;
+  row-gap: 80px;
+}
+
+.place {
+  display: grid;
+  grid-template-areas: "title artist" "image text" "button text";
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto 460px 1fr;
+  row-gap: 48px;
+  column-gap: 40px;
+}
+
+.place__title {
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 0;
+  grid-area: title;
+}
+
+.place__image {
+  width: 100%;
+  grid-area: image;
+}
+
+.place__image:hover {
+  opacity: 50%;
+}
+
+.place__button {
+  width: max-content;
+  height: max-content;
+  text-align: left;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 8px;
+  grid-area: button;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  padding: 13px 20px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.place__button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+
+.place__artist {
+  font-size: 12px;
+  grid-area: artist;
+  align-self: end;
+}
+
+.place__artist-heading {
+  font-size: 12px;
+  line-height: 100%;
+  color: #aaaaaa;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.place__artist-author {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.place__description {
+  font-size: 18px;
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 1.63;
+}
+
+.place__content {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .places {
+    max-width: 720px;
+    row-gap: 90px;
+  }
+
+  .place {
+    grid-template-columns: 340px 1fr;
+    grid-template-rows: auto 340px 1fr;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .place__description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .places {
+    padding: 0 16px;
+  }
+
+  .place {
+    grid-template-areas: "title" "artist" "image" "text" "button";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .place__button {
+    font-size: 14px;
+  }
+
+  .place__artist {
+    align-self: start;
+  }
+}
